@@ -10,14 +10,14 @@ using Seed.Repositories.Data;
 namespace Seed.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20210529201532_InitialCreate")]
+    [Migration("20210726233501_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.0")
+                .HasAnnotation("ProductVersion", "3.1.15")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -109,7 +109,7 @@ namespace Seed.API.Migrations
 
             modelBuilder.Entity("Seed.Models.V1.Models.DimSolutionFilter", b =>
                 {
-                    b.HasOne("Seed.Models.V1.Models.DimSolution", null)
+                    b.HasOne("Seed.Models.V1.Models.DimSolution", "DimSolution")
                         .WithMany("Filters")
                         .HasForeignKey("DimSolutionId");
                 });
