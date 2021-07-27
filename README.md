@@ -17,6 +17,7 @@ Once you have connected and configured correctly your appsetting.json you need t
 
 ```
 dotnet ef migrations add InitialCreate
+dotnet ef database update
 ```
 
 We should add the following SP to our database, basically we will work with SP in the API to make it work easier and practice more about all the back-end environment💻
