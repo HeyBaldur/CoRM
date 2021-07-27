@@ -1,4 +1,4 @@
-## This is a simple definition of CoRM.
+## This is a simple definition of CoRM. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Competitors Relationship Management (System), CoRM is a technology for managing all your company’s relationships and interactions with competitors. The goal is simple: Improve business relationships to grow your business. A CoRM system helps companies stay connected to competitors, streamline processes, and improve profitability.
 
