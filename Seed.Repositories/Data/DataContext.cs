@@ -16,6 +16,7 @@ namespace Seed.Repositories.Data
         public virtual DbSet<DimEmployee> DimEmployees { get; set; }
         public DbSet<DimSolution> DimSolutions { get; set; }
         public virtual DbSet<DimSolutionFilter> DimSolutionFilters { get; set; }
+        public DbSet<User> Users { get; set; }
 
     }
 }

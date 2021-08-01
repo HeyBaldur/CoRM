@@ -45,6 +45,7 @@ namespace Seed.API
 
             services.AddScoped<IEmployee, EmployeesRepository>();
             services.AddScoped<ISolution, SolutionRespository>();
+            services.AddScoped<IAuthentication, AuthenticationRepository>();
 
             // Add Automapper
             services.AddAutoMapper(typeof(Startup));
@@ -65,7 +66,7 @@ namespace Seed.API
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Hyreet V1", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Competitors Relationship Management CoRM", Version = "v1" });
             });
 
             services.AddControllersWithViews().AddNewtonsoftJson(options => 
