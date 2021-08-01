@@ -47,9 +47,13 @@
   <ItemGroup>
     <Compile Include="DimAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="V1\DTOs\UserRequestDto.cs" />
+    <Compile Include="V1\DTOs\UserResponseDto.cs" />
+    <Compile Include="V1\DTOs\UserToSignInDto.cs" />
     <Compile Include="V1\Models\DimEmployee.cs" />
     <Compile Include="V1\Models\DimSolution.cs" />
     <Compile Include="V1\Models\DimSolutionFilter.cs" />
+    <Compile Include="V1\Models\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
