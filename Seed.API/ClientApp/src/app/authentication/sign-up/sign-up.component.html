@@ -1,0 +1,40 @@
+<div class="form-signin">
+  <form>
+    <a [routerLink]="['/auth']">
+      <img class="mb-4 auth-logo" src="../../../assets/images/clouds.png" alt="CoRM">
+    </a>
+    <h1 class="h3 mb-3 fw-normal">Create a new account</h1>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-floating">
+          <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+          <label for="emailInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+          <label for="passwordInput">Password</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-floating">
+          <input type="text" class="form-control" id="fullNameInput" placeholder="Full name">
+          <label for="fullNameInput">Full name</label>
+        </div>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="usernameInput" placeholder="Username">
+          <label for="usernameInput">Username</label>
+        </div>
+      </div>
+    </div>
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">
+      &copy; 2017–2021
+      <a [routerLink]="['/auth/sign-in']">Sign in</a> your account or
+      visit the <a [routerLink]="['/auth']">home page</a>
+    </p>
+  </form>
+  <h2>Guides</h2>
+  <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
+</div>
